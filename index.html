@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <!--
+    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset
+    -->
+    <main>
+      <section>
+        <img class="logo" src="images/logo.svg" />
+        <div class="container">
+          <div class="flex_desk">
+            <p class="bill_paragraph">Bill</p>
+            <div class="bill_container">
+              <input class="bill_amount" type="number" required />
+              <img class="dollar_sign" src="images/icon-dollar.svg" alt="" />
+            </div>
+            <p class="select_tip">Select Tip %</p>
+            <div class="tips_container">
+              <button class="tip_btn" value="0.05">5%</button>
+              <button class="tip_btn" value="0.10">10%</button>
+              <button class="tip_btn" value="0.15">15%</button>
+              <button class="tip_btn" value="0.25">25%</button>
+              <button class="tip_btn" value="0.50">50%</button>
+              <input class="custom_tip" type="number" placeholder="Custom" />
+            </div>
+            <div class="people_container">
+              <p class="no_people">Number of People</p>
+              <input class="people_input" type="number" required />
+              <img class="person_img" src="images/icon-person.svg" alt="" />
+              <button class="calc_btn">CALCULATE</button>
+            </div>
+          </div>
+          <div class="total_container">
+            <div class="flex_container">
+              <p class="tip_person">
+                Tip Amount <span class="new_line"> / person</span>
+              </p>
+              <p class="tip_amount">$0.00</p>
+            </div>
+            <div class="flex_container">
+              <p class="total_person">
+                Total <span class="new_line">/ person</span>
+              </p>
+              <p class="total_amount">$0.00</p>
+            </div>
+            <button class="reset_btn">RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

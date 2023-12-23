@@ -1,0 +1,188 @@
+body {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(185, 41%, 84%);
+}
+input {
+  font-family: inherit;
+  font-size: 24px;
+  text-align: right;
+  background-color: hsl(189, 41%, 97%);
+  outline: none;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  width: 300px;
+}
+button {
+  cursor: pointer;
+}
+::placeholder {
+  color: hsl(184, 14%, 56%);
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 30px;
+  margin: 0 10px;
+}
+.tip_btn,
+.total_container {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(183, 100%, 15%);
+}
+.new_line {
+  display: block;
+}
+.reset_btn,
+input {
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+.reset_btn {
+  background-color: hsl(184, 14%, 56%);
+}
+.bill_container {
+  position: relative;
+}
+.dollar_sign,
+.person_img {
+  position: absolute;
+  left: 0;
+  margin: -35px 20px;
+}
+.person_img {
+  margin: -45px 20px;
+}
+.people_container {
+  position: relative;
+}
+.people_input {
+  margin-bottom: 12px;
+}
+.logo {
+  display: block;
+  margin: 20px auto;
+}
+.tips_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.tip_btn {
+  font-size: 20px;
+  width: 110px;
+  padding: 10px;
+  border: none;
+  font-family: inherit;
+  border-radius: 10px;
+}
+.custom_tip {
+  max-width: 140px;
+}
+.total_container {
+  border-radius: 12px;
+  padding: 10px;
+}
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+}
+.tip_amount,
+.total_amount {
+  font-size: 24px;
+  color: hsl(172, 67%, 45%);
+}
+.reset_btn {
+  background-color: hsl(172, 67%, 45%);
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 20px;
+}
+.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.calc_btn {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  font-family: inherit;
+}
+@media screen and (width > 620px) {
+  .container {
+    margin: 10px auto;
+    flex-direction: row;
+    max-width: 1000px;
+  }
+  .bill_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .select_tip {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex_desk {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dollar_sign,
+  .person_img {
+    margin: 15px 20px;
+  }
+  .person_img {
+    margin: 15px 20px;
+  }
+  .total_container {
+    width: 600px;
+  }
+  .tip_person,
+  .total_person {
+    font-size: 24px;
+  }
+  .tip_amount,
+  .total_amount {
+    font-size: 32px;
+  }
+  .reset_btn {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (width < 621px) {
+  .dollar_sign,
+  .person_img {
+    margin: 14px 20px;
+  }
+}
+@media screen and (width < 400px) {
+  .dollar_sign,
+  .person_img {
+    margin: 15px 20px;
+  }
+
+  input:not(.custom_tip) {
+    width: 200px;
+  }
+}
